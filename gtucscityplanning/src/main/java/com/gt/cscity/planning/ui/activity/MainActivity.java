@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         SlidingMenuDialog();
 
 
-        //测试
+        //ceshi ptm and hanyang
     }
 
 
