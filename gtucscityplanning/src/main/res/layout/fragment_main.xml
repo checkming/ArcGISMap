@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/fl_fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorQHuiSe"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/rg_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhiteBGText"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_city"
+                style="@style/Style_Buttom"
+                android:drawableTop="@drawable/buttom_city_selector"
+                android:text="市域"
+                android:textColor="@color/buttom_text_city_selector"/>
+
+
+            <RadioButton
+                android:id="@+id/rb_town"
+                style="@style/Style_Buttom"
+                android:drawableTop="@drawable/buttom_town_selector"
+                android:text="城镇"
+                android:textColor="@color/buttom_text_town_selector"/>
+
+            <RadioButton
+                android:id="@+id/rb_plate"
+                style="@style/Style_Buttom"
+                android:drawableTop="@drawable/buttom_plate_selector"
+                android:text="板块"
+                android:textColor="@color/buttom_text_plate_selector"/>
+
+            <RadioButton
+                android:id="@+id/rb_guihuai"
+                style="@style/Style_Buttom"
+                android:drawableTop="@drawable/buttom_guihuai_selector"
+                android:text="审批"
+                android:textColor="@color/buttom_text_guihua_selector"/>
+
+            <RadioButton
+                android:id="@+id/rb_inquiry"
+                style="@style/Style_Buttom"
+                android:drawableTop="@drawable/buttom_inquiry_selector"
+                android:text="查询"
+                android:textColor="@color/buttom_text_inquiry_selector"/>
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_set"-->
+                <!--style="@style/Style_Buttom"-->
+                <!--android:drawableTop="@drawable/buttom_set_selector"-->
+                <!--android:text="设置"-->
+                <!--android:textColor="@color/buttom_text_set_selector"/>-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_law"-->
+                <!--style="@style/Style_Buttom"-->
+                <!--android:drawableTop="@drawable/buttom_law_selector"-->
+                <!--android:text="法律"-->
+                <!--android:textColor="@color/buttom_text_law_selector"/>-->
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</LinearLayout>

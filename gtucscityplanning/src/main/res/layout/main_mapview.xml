@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.esri.android.map.MapView-->
+        <!--android:id="@+id/map"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></com.esri.android.map.MapView>-->
+
+
+    <!--<com.esri.arcgisruntime.mapping.view.MapView-->
+        <!--android:id="@+id/mapView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+    <!--</com.esri.arcgisruntime.mapping.view.MapView>-->
+
+    <RelativeLayout
+        android:id="@+id/fl_fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/main_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteBGText">
+
+            <RelativeLayout
+                android:id="@+id/main_rl_up"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorGradles"/>
+
+            <ImageButton
+                android:id="@+id/toolsBoxbtn"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shangs_lv"
+                android:contentDescription="@string/showorhide"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/toolsBoxbtn2"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shangs_lv"
+                android:contentDescription="@string/showorhide" />
+
+            <ImageView
+                android:src="@drawable/china"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/toolsBox"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/main_rl_up"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape_tools"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/tckz"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/shape_tool_button">
+
+                    <View
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/vectorlayer" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/djcx"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tckz"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/shape_tool_button">
+
+                    <View
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/identify_tip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fjss"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/djcx"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/shape_tool_button">
+
+                    <View
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/near_img" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ls"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/fjss"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/shape_tool_button">
+
+                    <View
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/celiang" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hcqfx"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/ls"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/shape_tool_button"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/huancongqu" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sq"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/hcqfx"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/shape_tool_button">
+
+                    <View
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bookmark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bj"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/sq"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/shape_tool_button">
+
+                    <View
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/biaozhu" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/qt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/bj"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/shape_tool_button">
+
+                    <View
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/overall_ico" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sc"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/qt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/shape_tool_button">
+
+                    <View
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/shanchu" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/sc" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/meatool"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="172dp"
+            android:background="@drawable/shape_button1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1">
+
+
+            <RelativeLayout
+                android:id="@+id/lineMeasure"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shape_tool_button">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ruler_jl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/areaMeasure"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shape_tool_button">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ruler_mj" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/book_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="216dp"
+            android:background="@drawable/shape_button1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/add_mark"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shape_tool_button">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/add_mark" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/show_mark"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shape_tool_button">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/show_mark" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/meat_content"
+            android:layout_width="fill_parent"
+            android:layout_height="51dip"
+            android:layout_gravity="center_horizontal"
+            android:background="#00000000"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ff0000"
+                android:textSize="22dip"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/content_space_parent"
+            android:layout_width="260dp"
+            android:layout_height="410dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_content_nomal"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/content_space"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffffff"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<View-->
+    <!--android:id="@+id/line"-->
+    <!--android:layout_width="3dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="18dp"-->
+    <!--android:background="@color/colorPrimaryDark" />-->
+
+    <!--<ListView-->
+    <!--android:id="@+id/third_listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:divider="@null"></ListView>-->
+
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">常熟Planning</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="server_setting"><u>服务器设置</u></string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_remove_operation">移除操作</string>>
+    <string name="scale">比例尺</string>
+    <string name="showorhide">显示和隐藏工具栏</string>
+</resources>

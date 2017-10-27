@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_details_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorGradles">
+
+        <ImageView
+            android:id="@+id/activity_details_return"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/returnback" />
+
+        <TextView
+            android:id="@+id/activity_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/activity_details_title"
+            android:text="市域编制成果"
+            android:textColor="@color/colorWhiteBGText"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/activity_details_search"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/search" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/activity_details_gd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:layout_below="@+id/activity_details_rl"></GridView>
+
+    <ListView
+        android:id="@+id/activity_details_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_details_gd"></ListView>
+
+    <LinearLayout
+        android:id="@+id/queryterm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
+        android:background="#C4E1FF"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/querytermh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jbshapeh"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/jbshape">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:text="过滤条件"
+                    android:textColor="#3c3c3c"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/finish"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="X"
+                    android:textColor="#888888"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/bz_query_term"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="年份:"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/year"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/edittext1"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionSearch"
+
+                            android:paddingLeft="4dp"
+                            android:singleLine="true"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp">
+                            >
+                        </Spinner>
+                        <!--<gt.pocketplan.csgh.draw.CustomSpinner-->
+                        <!--android:id="@+id/year"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_marginRight="8dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:imeOptions="actionSearch"-->
+                        <!--android:paddingLeft="4dp"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textColor="#3c3c3c"-->
+                        <!--android:textSize="14sp" >-->
+                        <!--</gt.pocketplan.csgh.draw.CustomSpinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:text="开展情况:"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/kz_qk"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/edittext1"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionSearch"
+
+                            android:singleLine="true"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp">
+                            >
+                        </Spinner>
+                        <!--<gt.pocketplan.csgh.draw.CustomSpinner-->
+                        <!--android:id="@+id/kz_qk"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_marginRight="8dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:imeOptions="actionSearch"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textColor="#3c3c3c"-->
+                        <!--android:textSize="14sp" >-->
+                        <!--</gt.pocketplan.csgh.draw.CustomSpinner>-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="项目名称:"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/project_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/edittext1"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionSearch"
+                            android:paddingLeft="4dp"
+
+                            android:singleLine="true"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="项目地址:"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/project_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/edittext1"
+                            android:gravity="center_vertical"
+
+                            android:imeOptions="actionSearch"
+                            android:paddingLeft="4dp"
+                            android:singleLine="true"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sp_query_term"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="案卷年份:"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+
+                        <!--<gt.pocketplan.csgh.draw.CustomSpinner-->
+                        <!--android:id="@+id/op_year"-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_marginRight="8dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:imeOptions="actionSearch"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textColor="#3c3c3c"-->
+                        <!--android:textSize="14sp" >-->
+                        <!--</gt.pocketplan.csgh.draw.CustomSpinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:text="案卷号:"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/op_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionSearch"
+                            android:paddingLeft="4dp"
+                            android:singleLine="true"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="业务状态:"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+
+                        <!--<gt.pocketplan.csgh.draw.CustomSpinner-->
+                        <!--android:id="@+id/yw_state"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_marginRight="8dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:imeOptions="actionSearch"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textColor="#3c3c3c"-->
+                        <!--android:textSize="14sp" >-->
+                        <!--</gt.pocketplan.csgh.draw.CustomSpinner>-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="业务类型:"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+
+                        <!--<gt.pocketplan.csgh.draw.CustomSpinner-->
+                        <!--android:id="@+id/op_type"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_marginRight="8dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:imeOptions="actionSearch"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textColor="#3c3c3c"-->
+                        <!--android:textSize="14sp" >-->
+                        <!--</gt.pocketplan.csgh.draw.CustomSpinner>-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="项目名称:"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/op_project_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionSearch"
+                            android:paddingLeft="4dp"
+                            android:singleLine="true"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="单位名称:"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/unit_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionSearch"
+                            android:paddingLeft="4dp"
+                            android:singleLine="true"
+                            android:textColor="#3c3c3c"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/isok"
+                        style="@style/btnStyleShakespeare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:text="查  询"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/reduction"
+                        style="@style/btnStyleShakespeare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:text="还  原"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/cancel"
+                        style="@style/btnStyleShakespeare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="取  消"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGradle">#4db6ac</color>
+    <color name="colorGradles">#009688</color>
+    <color name="colorGradless">#00796B</color>
+    <color name="colorWhiteBGText">#FFFFFF</color>
+    <color name="colorTextQin">#B2DFDB</color>
+    <color name="colorHuiSe">#757575</color>
+    <color name="colorQHuiSe">#BDBDBD</color>
+    <color name="colorZhongSe">#795548</color>
+    <color name="colorWhiteee">#Bf8d8d8d</color>
+    <color name="transparent">#00000000</color>
+    <color name="unfocused">#99ffffff</color>
+    <color name="pressed">#7FCDE9</color>
+    <color name="white">#7FCDE9</color>
+    <color name="selected">#7FCDE9</color>
+    <color name="focused">#7FCDE9</color>
+    <color name="leftMenu_text_normal">#ffffff</color>
+    <color name="leftMenu_text_highlight">#51BCFA</color>
+    <color name="cachebtnbgs">#3AB8E6</color>
+    <color name="holo_green_dark">#ff669900</color>
+    <color name="gray">#999999</color>
+    <color name="realwhite">#FFFFFF</color>
+    <color name="list_item_bg">#f0f0f0</color>
+</resources>

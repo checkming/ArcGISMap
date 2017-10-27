@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item android:title="编制成果">
+            <menu>
+                <item
+                    android:id="@+id/single_1"
+                    android:icon="@drawable/city"
+                    android:title="市域"/>
+
+                <item
+                    android:id="@+id/single_2"
+                    android:icon="@drawable/town"
+                    android:title="乡镇"/>
+
+                <item
+                    android:id="@+id/single_3"
+                    android:icon="@drawable/plate"
+                    android:title="板块"/>
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/single_4"
+            android:icon="@drawable/guaihui"
+            android:title="规划审批"/>
+
+        <item
+            android:id="@+id/single_5"
+            android:icon="@drawable/inquiry"
+            android:title="综合查询"/>
+
+        <item
+            android:id="@+id/single_6"
+            android:icon="@drawable/set"
+            android:title="系统设置管理"/>
+
+        <item
+            android:id="@+id/single_7"
+            android:icon="@drawable/law"
+            android:title="法律法规查询"
+            />
+    </group>
+</menu>

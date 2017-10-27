@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mapInfo>
+  	<restUrl>http://192.168.1.108:6080/arcgis/rest/services</restUrl>
+  	<bsUrl>http://192.168.1.16:8005</bsUrl>
+  	<!-- <bsUrl>http://192.168.1.120:8001/service.do?</bsUrl>
+	<mapextent>2180, 40207, 51656, 89976</mapextent> -->
+	<dbpath>/0/CSGHPocketPlan/database/cspocketPlan.db</dbpath>
+	<imagepath>/0/CSGHPocketPlan/Images/</imagepath>
+	<filepath>/0/CSGHPocketPlan/files/</filepath>
+	<upload>/0/CSGHPocketPlan/upload/</upload>
+	<styles>/0/CSGHPocketPlan/styles/</styles>
+	<szstreet>http://192.168.1.2/street/index.html</szstreet>
+	<publics>http://192.168.1.2/PocketPlane/</publics>
+	<ClientID>KlfQKqmbxJHZY1JD</ClientID>
+</mapInfo>

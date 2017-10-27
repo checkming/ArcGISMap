@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:id="@+id/action_settings"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:icon="@drawable/y_set"-->
+    <!--android:title="@string/action_settings"-->
+    <!--app:showAsAction="never"/>-->
+
+    <!--2-->
+    <item
+        android:id="@+id/menu_i_inquiry"
+        android:icon="@drawable/menu_i_inquiry"
+        android:title="开启i查询">
+
+        <menu>
+            <item android:title="搜索">
+                <menu>
+
+                </menu>
+
+            </item>
+
+
+        </menu>
+
+
+    </item>
+
+    <item
+        android:id="@+id/menu_near_search"
+        android:icon="@drawable/menu_near_search"
+        android:title="附近搜索"></item>
+    <item
+        android:id="@+id/menu_measuring_mapping"
+        android:icon="@drawable/menu_measuring_mapping"
+        android:title="量算绘测"></item>
+    <item
+        android:id="@+id/menu_add_bookmark"
+        android:icon="@drawable/menu_add_bookmark"
+        android:title="添加书签"></item>
+    <item
+        android:id="@+id/menu_layer_control"
+        android:icon="@drawable/menu_layer_control"
+        android:title="图层管理">
+
+        <menu>
+            <item android:title="基础信息图">
+                <menu>
+                    <item
+                        android:icon="@drawable/y_set"
+                        android:title="村庄 "></item>
+                    <item android:title="铁路"></item>
+                    <item android:title="高速公路"></item>
+                    <item android:title="国道"></item>
+                    <item android:title="市区道路"></item>
+                    <item android:title="人行道"></item>
+                    <item android:title="住宅小区"></item>
+                    <item android:title="加油站加气站"></item>
+                    <item android:title="科研教育"></item>
+                    <item android:title="国道2"></item>
+                    <item android:title="省道"></item>
+                </menu>
+            </item>
+            <item android:title="规划审批图"></item>
+            <item android:title="规划编制项目图"></item>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/menu_bookmark"
+        android:icon="@drawable/menu_add_marks"
+        android:title="添加标记"></item>
+    <item
+        android:id="@+id/menu_calibration_map"
+        android:icon="@drawable/menu_calibration_map"
+        android:title="校准地图"></item>
+    <item
+        android:id="@+id/menu_remove_operation"
+        android:title="@string/menu_remove_operation"></item>
+
+</menu>
