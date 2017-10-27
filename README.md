@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 高仿微信6.5.7（融云版）
 ============
 
@@ -154,3 +155,7 @@
 ![alipay](screenshots/alipay.png)
 
 
+=======
+# ArcGisMap
+Reconsitution of CSCityPlanning
+>>>>>>> e416fca3cd5911a0e8eaa01f6efeffe2415fff62
